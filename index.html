@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Room homepage</title>
+    <style>
+        body {
+            font-family: 'Spartan', sans-serif;
+        }
+
+        @media (min-width: 768px) {
+            .md\:thpec {
+                width: 28%;
+            }
+
+            .md\:ffpec {
+                width: 44%;
+            }
+
+        }
+    </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<div class="min-h-screen w-full text-xs flex flex-col">
+    <div class="flex flex-col md:flex-row w-full flex-grow">
+        <div id="slider-img" class="bg-cover bg-no-repeat bg-center md:w-3/5 w-full md:h-auto h-96 flex flex-col justify-between"
+             style="background-image: url('images/desktop-image-hero-1.jpg')">
+            <header id="header"
+                    class="flex z-10 relative md:flex-row bg-transparent md:w-1/2 w-full items-center md:justify-between justify-center h-32 text-white md:ml-6">
+
+                <button id="mobile-menu-toggle" class="md:hidden block outline-none absolute left-0 ml-6">
+                    <img src="images/icon-hamburger.svg" alt="mobile menu toggle">
+                </button>
+                <button id="mobile-menu-close" class="md:hidden hidden outline-none absolute left-0 ml-6">
+                    <img src="images/icon-close.svg" alt="mobile menu close">
+                </button>
+                <a href="#" class=" mx-3">
+                    <img src="images/logo.svg" alt="logo" class="mb-1 w-full w-40"/>
+                </a>
+
+                <ul id="menu" class="md:flex hidden flex-row md:text-white text-black">
+                    <li class="mr-5">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="mr-5">
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="mr-5">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="mr-5">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </header>
+            <div class="flex md:hidden self-end">
+                <div class="bg-black p-4 text-white text-xl flex items-center justify-between"
+                     style="width: 130px">
+                    <button class="slider-prev-btn">
+                        <img src="images/icon-angle-left.svg" alt="arrow left" class="w-4 h-auto"/>
+                    </button>
+                    <button class="slider-next-btn">
+                        <img src="images/icon-angle-right.svg" alt="arrow right" class="w-4 h-auto"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-2/5 w-full flex flex-col justify-between">
+            <div class="bg-white md:px-16 px-10 pt-24 pb-16">
+                <div id="slider1" class="hidden">
+                    <h1 class="font-bold md:text-4xl text-3xl">Discover innovative ways to decorate</h1>
+                    <p class="leading-normal text-gray-500 my-8">
+                        We provide unmatched quality, comfort, and style for property owners across the country.
+                        Our experts combine form and function in bringing your vision to life. Create a room in your
+                        own style with our collection and make your property a reflection of you and what you
+                        love.
+                    </p>
+                </div>
+
+                <div id="slider2" class="hidden">
+                    <h1 class="font-bold md:text-4xl text-3xl"> We are available all across the globe</h1>
+                    <p class="leading-normal text-gray-500 my-8"> With stores all over the world, it's easy for you to
+                        find furniture for your home or place
+                        of business.
+                        Locally, we’re in most major cities throughout the country. Find the branch nearest you
+                        using our
+                        store locator. Any questions? Don't hesitate to contact us today.</p>
+                </div>
+                <div id="slider3">
+                    <h1 class="font-bold md:text-4xl text-3xl"> Manufactured with the best materials</h1>
+                    <p class="leading-normal text-gray-500 my-8"> Our modern furniture store provide a high level of
+                        quality. Our company has invested in
+                        advanced technology
+                        to ensure that every product is made as perfect and as consistent as possible. With three
+                        decades of
+                        experience in this industry, we understand what customers want for their home and
+                        office.
+                    </p>
+                </div>
+
+                <button class="flex flex-row items-center outline-none">
+                    <span class="uppercase" style="letter-spacing: .6em">Shop now</span>
+                    <img src="images/icon-arrow.svg" alt="arrow" class="ml-4">
+                </button>
+
+            </div>
+
+
+            <div class="md:flex hidden">
+                <div class="bg-black p-6 text-white text-xl flex items-center justify-between"
+                     style="width: 173px">
+                    <button class="slider-prev-btn">
+                        <img src="images/icon-angle-left.svg" alt="arrow left" class="w-5 h-auto"/>
+                    </button>
+                    <button class="slider-next-btn">
+                        <img src="images/icon-angle-right.svg" alt="arrow right" class="w-5 h-auto"/>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="flex md:flex-row flex-col w-full">
+        <div class="md:thpec w-full">
+            <img src="images/image-about-dark.jpg" class="w-full h-full" alt="about dark"/>
+        </div>
+        <div class="p-12 md:ffpec">
+            <div class="w-full">
+                <h1 class="uppercase text-xl mb-5">About our furniture</h1>
+                <p class="leading-normal text-gray-500">
+                    Our multifunctional collection blends design and function to suit your individual taste.
+                    Make each room unique, or pick a cohesive theme that best express your interests and what
+                    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                    or anything in between. Product specialists are available to help you create your dream space.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="md:thpec w-full">
+            <img src="images/image-about-light.jpg" class="w-full h-full" alt="about light">
+        </div>
+    </div>
+    <div id="mobile-menu-opened" class="hidden z-0 w-screen h-screen fixed bg-black opacity-50 z-0"></div>
+</div>
+
+
+<!--<div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->
+<!--    Coded by <a href="#">Your Name Here</a>.-->
+<!--</div>-->
+
+<script>
+    // Menu
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const header = document.getElementById('header');
+    const menu = document.getElementById('menu');
+    const mobileMenuOpenIndicator = document.getElementById('mobile-menu-opened');
+
+
+    function toggleMobileMenu() {
+        mobileMenuToggle.style.display = 'none';
+        mobileMenuClose.style.display = 'block';
+        header.style.backgroundColor = '#fff';
+        menu.style.display = 'flex';
+        mobileMenuOpenIndicator.style.display = 'block';
+    }
+
+    function closeMobileMenu() {
+        mobileMenuToggle.style.display = 'block';
+        mobileMenuClose.style.display = 'none';
+        header.style.backgroundColor = '';
+        menu.style.display = 'none';
+        mobileMenuOpenIndicator.style.display = 'none';
+
+    }
+
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+
+    // Slider
+    const sliderData = [
+        {
+            block: document.getElementById('slider1'),
+            image: 'url("images/desktop-image-hero-1.jpg")',
+            current: false
+        },
+        {
+            block: document.getElementById('slider2'),
+            image: 'url("images/desktop-image-hero-2.jpg")',
+            current: false
+        },
+        {
+            block: document.getElementById('slider3'),
+            image: 'url("images/desktop-image-hero-3.jpg")',
+            current: false
+        }
+    ];
+
+    const sliderNextButtons = document.getElementsByClassName('slider-next-btn');
+    const sliderPrevButtons = document.getElementsByClassName('slider-prev-btn');
+    let currentIndex = 1;
+
+    function switchSlider() {
+        currentIndex++;
+
+        if (currentIndex >= sliderData.length) currentIndex = 0;
+
+        sliderData[currentIndex].block.classList.add('block');
+        sliderData[currentIndex].block.classList.remove('hidden');
+        document.getElementById('slider-img').style.backgroundImage = sliderData[currentIndex].image;
+        sliderData[currentIndex].current = true;
+
+        sliderData.map(elm => {
+            if (!elm.current) elm.block.classList.add('hidden');
+            elm.current = false;
+        });
+    }
+    [...sliderNextButtons, ...sliderPrevButtons].forEach(button => button.addEventListener('click', switchSlider));
+
+</script>
+</body>
+</html>
